@@ -49,17 +49,33 @@ class Test():
         risk_free_rate = 0.01
 
         sharpe_ratio = self.calculator.get_daily_sharpe_ratio (avg_daily_return, risk_free_rate, daily_std)
+
+        print(total_stock_return)
+        print(total_return)
+        print(annualized_rate_of_return)
+        print(final_aum)
+        print(average_aum)
+        print(max_aum)
+        print(avg_daily_return)
+        print(daily_std)
+        print(pnl)
+        print(risk_free_rate)
+        print(sharpe_ratio)
+
+
+
+
         assert(total_stock_return == -0.44743424706555934)
         assert(total_return == -223.7171235327769)
         assert(annualized_rate_of_return == 0.0)
         assert(final_aum == 49776.28287646722)
-        assert(average_aum == 49776.616538809634)
+        assert(average_aum == 49850.855250978144)
         assert(max_aum == 50000)
-        assert(avg_daily_return == -74.57237451092563)
-        assert(daily_std == 158.1918951175751)
+        assert(avg_daily_return == -0.22371712353277967)
+        assert(daily_std == 0.3163837902351541)
         assert(pnl == -223.7171235327769)
         assert(risk_free_rate == 0.01)
-        assert(sharpe_ratio == -3.632122708207513)
+        assert(sharpe_ratio == -0.7387139630607119)
 
 
     def test_plot(self):
