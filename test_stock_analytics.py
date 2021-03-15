@@ -11,21 +11,6 @@ class Test():
         self.initial_aum = initial_aum
         self.calculator = AumCalculator(df, initial_aum)
         
-
-    # print(total_stock_return)
-    # print(total_return)
-    # print(annualized_rate_of_return)
-    # print(final_aum)
-    # print(average_aum)
-    # print(max_aum)
-    # print(avg_daily_return)
-    # print(daily_std)
-    # print(pnl)
-    # print(risk_free_rate)
-    # print(sharpe_ratio)
-
-
-
     def test_returns(self):
 
         calendar_days = 3
@@ -49,21 +34,6 @@ class Test():
         risk_free_rate = 0.01
 
         sharpe_ratio = self.calculator.get_daily_sharpe_ratio (avg_daily_return, risk_free_rate, daily_std)
-
-        print(total_stock_return)
-        print(total_return)
-        print(annualized_rate_of_return)
-        print(final_aum)
-        print(average_aum)
-        print(max_aum)
-        print(avg_daily_return)
-        print(daily_std)
-        print(pnl)
-        print(risk_free_rate)
-        print(sharpe_ratio)
-
-
-
 
         assert(total_stock_return == -0.44743424706555934)
         assert(total_return == -223.7171235327769)
