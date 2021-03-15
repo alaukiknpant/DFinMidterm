@@ -1,5 +1,7 @@
 ## Data Science for Quantative finance Midterm
 
+Github Repo: https://github.com/alaukiknpant/DFinMidterm
+
 Name: Alaukik Pant
 
 ## Commands to Run for analytics
